@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/*리셋 영역*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a:any-link {
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+
+/*공통 영역*/
+
+.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+#wrap {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/apple-1841553_1920.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*섹션*/
+
+
+
+/*pc 영역*/
+
+main {
+    max-width: 1024px;
+    height: 720px;
+    margin: 0 auto;
+    margin-top: calc((100vh - 720px)/2);
+    font-size: 16px;
+    position: relative;
+}
+
+section {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1.2s;
+}
+
+#sec1 {
+    z-index: 1;
+}
+
+article {
+    background-color: #e4f1f9;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+}
+
+.body > h3 {
+    position: absolute;
+    font: bold 2.5em/1.4em '나눔고딕';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -170%);
+    width: 70%;
+    text-align: center;
+}
+
+.stress {
+    font-size: 1.3em;
+}
+
+.body > p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -10%);
+    font: 1.875em/1.8 '나눔고딕';
+    width: 80%;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.next {
+    transform: rotateY(180deg);
+}
+
+.front {
+    border-radius: 0 15px 15px 0;
+}
+
+.cover {
+    position: relative;
+    border: none;
+    background: url(../img/fountain-pen-1851096_1920.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.cover > h3 {
+    font: bold 3.75em/1em '나눔고딕';
+    text-align: center;
+    position: relative;
+    top: 45%;
+}
+
+.cover > h3:nth-child(2) {
+    top: 65%;
+}
+
+.toc {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toc > li {
+    font: bold 1.875em/1.8 '나눔고딕';
+    text-align: center;
+}
+
+.sub {}
+
+.sub > li {}
+
+.sub > li > a {
+    display: block;
+    width: 100%;
+    font: normal 0.8em/1.5 '나눔고딕';
+    color: #000;
+    text-align: center;
+}
+
+.sub > li > a:hover {
+    text-decoration: underline;
+}
