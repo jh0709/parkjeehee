@@ -1,3 +1,7 @@
-setTimeout(function(){
+setTimeout(function () {
     $('#sec1').addClass('next')
-},800)
+}, 800);
+
+setTimeout(function () {
+    $('.cover').addClass('next');
+}, 800);
