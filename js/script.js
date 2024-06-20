@@ -3,5 +3,5 @@ setTimeout(function () {
 }, 800);
 
 setTimeout(function () {
-    $('.cover').addClass('next');
+    $('#mobile>.cover').addClass('next');
 }, 800);
