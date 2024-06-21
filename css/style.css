@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @charset "utf-8";
 
 /*리셋 영역*/
@@ -203,9 +196,11 @@ article {
         width: 50%;
         left: 50%;
         -webkit-transform-origin: left;
+        -moz-transform-origin: left;
             -ms-transform-origin: left;
                 transform-origin: left;
         -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
                 transform-style: preserve-3d;
         -webkit-transition: all 1.2s;
         -o-transition: all 1.2s;
