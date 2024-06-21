@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "utf-8";
 
 /*리셋 영역*/
@@ -9,6 +16,14 @@
 
 ul {
     list-style: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a:-moz-any-link {
+    text-decoration: none;
 }
 
 a:any-link {
@@ -33,7 +48,8 @@ p {
     background-size: cover;
     overflow: hidden;
     padding: 20px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /*섹션*/
@@ -68,8 +84,11 @@ article {
     top: 0;
     background-color: #e4f1f9;
     border: 3px solid #fff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 30px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
 }
 
@@ -97,7 +116,9 @@ article {
     font: bold 2.5em/1.4em '나눔고딕';
     left: 50%;
     top: 8%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 100%;
     text-align: center;
 }
@@ -110,19 +131,25 @@ article {
     position: absolute;
     left: 50%;
     top: 75%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     font: 1.875em/1.8 '나눔고딕';
     width: 100%;
 }
 
 .next {
-    transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+            transform: translateX(-110%);
 }
 
 .toc {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .toc > li {
@@ -168,8 +195,13 @@ article {
     section {
         width: 50%;
         left: 50%;
-        transform-origin: left;
-        transform-style: preserve-3d;
+        -webkit-transform-origin: left;
+            -ms-transform-origin: left;
+                transform-origin: left;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        -webkit-transition: all 1.2s;
+        -o-transition: all 1.2s;
         transition: all 1.2s;
         padding: 0;
     }
@@ -183,16 +215,19 @@ article {
         position: absolute;
         left: 0;
         top: 0;
-        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
         padding: 0;
     }
 
     .back {
-        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
     }
 
     .next {
-        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
     }
 
     .front {
@@ -204,7 +239,9 @@ article {
         font: bold 2.5em/1.4em '나눔고딕';
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-170%);
+        -webkit-transform: translate(-50%,-170%);
+            -ms-transform: translate(-50%,-170%);
+                transform: translate(-50%,-170%);
         width: 70%;
         text-align: center;
     }
@@ -213,7 +250,9 @@ article {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-10%);
+        -webkit-transform: translate(-50%,-10%);
+            -ms-transform: translate(-50%,-10%);
+                transform: translate(-50%,-10%);
         font: 1.875em/1.8 '나눔고딕';
         width: 80%;
     }
